@@ -7,7 +7,7 @@ if [[ ! $(whoami 2> /dev/null) ]]; then
 fi
 
 if [[ "$TZ" ]]; then
-    echo "$TZ" | sudo tee /etc/timezone
+    echo "$TZ" | sudo tee /etc/timezone > /dev/null
     sudo dpkg-reconfigure --frontend noninteractive tzdata > /dev/null 2> /dev/null
 fi
 
