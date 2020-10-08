@@ -55,9 +55,11 @@ RUN echo "**** Setting up repositories ****" \
     && echo "**** Installing packages ****" \
     && apt-get install -y --no-install-recommends \
         dumb-init \
+        git \
         iproute2 \
         jq \
         nodejs \
+        openssh-client \
         python3 \
         sudo \
         yarn \
